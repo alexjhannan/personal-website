@@ -1,0 +1,8 @@
+html, body{
+	background-color: #f0f0f0;
+}
+
+.panel-heading{
+	background-color: #222222 !important;
+	color: #f0f0f0 !important;
+}
