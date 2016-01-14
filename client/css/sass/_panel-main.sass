@@ -1,13 +1,18 @@
 .panel-main
+	box-shadow: none
 	.panel-heading
 		background-color: $brand-black !important
 		color: $brand-white !important
 	.panel-body
+		margin-left: 5px
+		margin-right: -1px
 		ul
 			list-style: none
-			padding: 0
-		.well
-			position: relative
-			top: 5px
 			padding-top: 5px
-			padding-bottom: 5px
+		.bordered-well
+			border: 1px solid $brand-black
+			border-bottom-left-radius: 20px
+			border-top-left-radius: 20px
+			border-right: 0
+			padding-top: 5px
+			background-color: $brand-white

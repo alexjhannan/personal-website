@@ -12,17 +12,24 @@ a {
   a:focus {
     text-decoration: none; }
 
-.panel-main .panel-heading {
-  background-color: #222222 !important;
-  color: #f0f0f0 !important; }
-.panel-main .panel-body ul {
-  list-style: none;
-  padding: 0; }
-.panel-main .panel-body .well {
-  position: relative;
-  top: 5px;
-  padding-top: 5px;
-  padding-bottom: 5px; }
+.panel-main {
+  box-shadow: none; }
+  .panel-main .panel-heading {
+    background-color: #222222 !important;
+    color: #f0f0f0 !important; }
+  .panel-main .panel-body {
+    margin-left: 5px;
+    margin-right: -1px; }
+    .panel-main .panel-body ul {
+      list-style: none;
+      padding-top: 5px; }
+    .panel-main .panel-body .bordered-well {
+      border: 1px solid #222222;
+      border-bottom-left-radius: 20px;
+      border-top-left-radius: 20px;
+      border-right: 0;
+      padding-top: 5px;
+      background-color: #f0f0f0; }
 
 .brand-hr {
   border-color: #8e44ad; }
