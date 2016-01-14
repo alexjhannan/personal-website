@@ -1,8 +1,30 @@
-html, body{
-	background-color: #f0f0f0;
-}
+html, body {
+  background-color: #f0f0f0;
+  font-family: Helvetica; }
 
-.panel-heading{
-	background-color: #222222 !important;
-	color: #f0f0f0 !important;
-}
+h1, h2, h3, h4 {
+  font-family: Inconsolata; }
+
+a {
+  color: #8e44ad; }
+  a:hover {
+    text-decoration: none; }
+  a:focus {
+    text-decoration: none; }
+
+.panel-main .panel-heading {
+  background-color: #222222 !important;
+  color: #f0f0f0 !important; }
+.panel-main .panel-body ul {
+  list-style: none;
+  padding: 0; }
+.panel-main .panel-body .well {
+  position: relative;
+  top: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px; }
+
+.brand-hr {
+  border-color: #8e44ad; }
+
+/*# sourceMappingURL=styles.css.map */
