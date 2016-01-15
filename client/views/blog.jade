@@ -1,0 +1,25 @@
+doctype html
+html
+	head
+		title Kaleidoscope: #{ story.title }
+		link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css')
+		link(rel='stylesheet', href='../css/styles.css')
+		script(src='https://code.jquery.com/jquery-2.2.0.min.js')
+		script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js')
+	body
+		.container
+			h1
+				| Kaleidoscope 
+				small Alex Hannan
+			hr.brand-hr
+			.row
+				.col-sm-12.col-md-8.col-md-offset-2
+					.panel.panel-main
+						.panel-heading
+							h3
+								| #{ story.title }
+								br
+								small #{ story.hook }
+						.panel-body
+							p
+								| #{ story.body }
