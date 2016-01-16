@@ -1,23 +1,24 @@
 html, body {
-  background-color: #f0f0f0;
+  background-color: white;
   font-family: Helvetica; }
 
 h1, h2, h3, h4 {
   font-family: Inconsolata; }
   h1 small, h2 small, h3 small, h4 small {
-    color: #8e44ad; }
+    color: #e5521d; }
 
 a {
-  color: #8e44ad; }
+  color: #e5521d; }
   a:hover {
     text-decoration: none; }
   a:focus {
     text-decoration: none; }
 
 .panel-main {
-  box-shadow: none; }
+  box-shadow: none;
+  background-color: #f0f0f0; }
   .panel-main .panel-heading {
-    background-color: #222222 !important;
+    background-color: #333 !important;
     color: #f0f0f0 !important; }
   .panel-main .panel-body {
     margin-left: 5px;
@@ -25,13 +26,32 @@ a {
     .panel-main .panel-body ul {
       list-style: none; }
     .panel-main .panel-body .bordered-well {
-      border: 1px solid #222222;
+      border: 1px solid #333;
       border-bottom-left-radius: 20px;
       border-top-left-radius: 20px;
       padding-top: 5px;
-      background-color: #f0f0f0; }
+      background-color: white; }
 
 .brand-hr {
-  border-color: #8e44ad; }
+  border-color: #e5521d; }
+
+#contact-form .input-group {
+  margin-top: 15px; }
+  #contact-form .input-group .input-group-addon {
+    width: 75px;
+    padding: 0;
+    margin: 0;
+    background-color: #333;
+    color: #e5521d;
+    border: 1px black solid; }
+  #contact-form .input-group textarea {
+    height: 150px !important;
+    resize: none; }
+#contact-form .btn {
+  background-color: #333;
+  color: #e5521d;
+  border: 1px black solid;
+  margin: 20px 0;
+  width: 75px; }
 
 /*# sourceMappingURL=styles.css.map */

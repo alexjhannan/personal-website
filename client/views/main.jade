@@ -3,6 +3,7 @@ html
 	head
 		title Hannan Development
 		link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css')
+		link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css')
 		link(rel='stylesheet', href='../css/styles.css')
 		script(src='https://code.jquery.com/jquery-2.2.0.min.js')
 		script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js')
@@ -51,7 +52,7 @@ html
 										a(href='http://www.freecodecamp.com/', target='_blank') FreeCodeCamp
 										| 's curriculum served as a series of signposts for the early days.
 									p
-										| These simple projects only include front-end work. Once I became familiar with NodeJS, I stepped into creating simple back-ends. For some examples of full-stack projects, see my GitHub page, below.
+										| These simple projects only include front-end work. Once I became familiar with NodeJS, I shifted my focus towards building full-stack applicatinos and delving further into Node's ecosystem of code. For some examples of full-stack projects, see my GitHub page, below.
 			.row
 				.col-sm-12.col-md-10.col-md-offset-1
 					.panel.panel-main
@@ -76,12 +77,46 @@ html
 											a(href='http://jsfiddle.net/user/dasbuuten/fiddles/') jsFiddle
 								.col-xs-12.col-sm-7.col-sm-offset-1.bordered-well.text-justify
 									p
-										| My GitHub has examples of larger projects I've been involved in. FreeCodeCamp provided a curriculum for my early JS learning, alongside textbooks like 
+										| My GitHub has examples of larger projects I've been involved in. 
+										a(href='http://www.freecodecamp.com/', target='_blank') FreeCodeCamp
+										|  provided a curriculum for my early JS learning, alongside textbooks like 
 										em JavaScript: The Good Parts
 										|  and 
 										em Eloquent JavaScript
 										| . Meanwhile, CodeEval, CodeWars, and jsFiddle track practice work.
 			.row
+				.col-sm-12.col-md-10.col-md-offset-1
+					.panel.panel-main
+						.panel-heading
+							h3
+								| Contact Me
+								br
+								small i'm always interested in a chat
+						.panel-body
+							.row
+								.col-xs-11.col-xs-offset-1.bordered-well.text-justify
+									.row
+										.col-xs-12.col-sm-10.col-sm-offset-1
+											form#contact-form(action='/contactform', method='post')
+												.input-group
+													span.input-group-addon
+														| topic
+													input.form-control(type='text', name='subject', minlength='2', required)
+												.input-group
+													span.input-group-addon
+														| message
+													textarea.form-control(name='message', minlength='2', required)
+												.input-group
+													span.input-group-addon
+														| name
+													input.form-control(type='text', name='author', minlength='2', required)
+												.input-group
+													span.input-group-addon
+														| email
+													input.form-control(type='email', name='subject', minlength='2', required)
+												button.btn(type="submit") send
+														
+			//.row
 				.col-sm-12.col-md-offset-1.col-md-10
 					.panel.panel-main
 						.panel-heading
@@ -94,7 +129,7 @@ html
 								.col-xs-12.col-sm-4
 									ul.flip-text
 										li
-											a(href='#', target='_blank') Post
+											a(href='/kaleidoscope/', target='_blank') Post
 										li
 											a(href='#', target='_blank') Post
 										li
@@ -103,7 +138,8 @@ html
 											a(href='#', target='_blank') Post
 								.col-xs-12.col-sm-7.col-sm-offset-1.bordered-well.text-justify
 									p
-										| Without coding, my career was leading me down the path of an educator. My efforts to better understand my students turned into a line of inquiry that I continue to digest, write, think, and talk about today.
+										| Without coding, my career was leading me down the path of an educator. My efforts to better understand my students turned into a line of inquiry that I am still digesting.
 									p
-										| I call this paradigm of information 'Kaleidoscope' - for goofy reasons - and I invite the curious to browse on. Whether any of this is useful is beyond me, though my enjoyment of the process is quite enough.
+										| Ocassionally, I write on the topic for fun, but the practice gained from building a CRUD blog is the main reason this portion of the site exists.
 		script(src='js/flip-text.js')
+		script(src='js/size-contact-form.js')
