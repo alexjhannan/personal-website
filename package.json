@@ -4,7 +4,8 @@
   "description": "Website for (and by) Alex Hannan.",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "sass": "sass -w client/css/sass/base.sass:client/css/styles.css"
   },
   "author": "",
   "license": "ISC",

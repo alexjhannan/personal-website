@@ -5,10 +5,10 @@ html, body {
 h1, h2, h3, h4 {
   font-family: Inconsolata; }
   h1 small, h2 small, h3 small, h4 small {
-    color: #e5521d; }
+    color: #00A3D7; }
 
 a {
-  color: #e5521d; }
+  color: #00A3D7; }
   a:hover {
     text-decoration: none; }
   a:focus {
@@ -33,7 +33,7 @@ a {
       background-color: white; }
 
 .brand-hr {
-  border-color: #e5521d; }
+  border-color: #00A3D7; }
 
 #contact-form .input-group {
   margin-top: 15px; }
@@ -42,14 +42,14 @@ a {
     padding: 0;
     margin: 0;
     background-color: #333;
-    color: #e5521d;
+    color: #00A3D7;
     border: 1px black solid; }
   #contact-form .input-group textarea {
     height: 150px !important;
     resize: none; }
 #contact-form .btn {
   background-color: #333;
-  color: #e5521d;
+  color: #00A3D7;
   border: 1px black solid;
   margin: 20px 0;
   width: 75px; }
