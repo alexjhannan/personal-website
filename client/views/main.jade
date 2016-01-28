@@ -14,7 +14,7 @@ html
 				small web development
 			hr.brand-hr
 			br
-			.row
+			.row.accordion
 				.col-sm-12.col-md-10.col-md-offset-1
 					.panel.panel-main
 						.panel-heading
@@ -49,7 +49,7 @@ html
 										| Hi! My name is Alex Hannan. I'm a self-taught JavaScript developer living in the Philadelphia area. This site is a small catalog of my project work.
 									p
 										| Most of the source code for these projects is available on CodePen. This webpage, as well as "Helping Children Understand," were built with Node on the back-end and deployed via Heroku.
-			.row
+			.row.accordion
 				.col-sm-12.col-md-10.col-md-offset-1
 					.panel.panel-main
 						.panel-heading
@@ -72,7 +72,7 @@ html
 								.col-xs-12.col-sm-7.col-sm-offset-1.bordered-well.text-justify
 									p
 										| Profiles on other sites for easy navigation, should you like to see more of my code.
-			.row
+			.row.accordion#contact-accordion
 				.col-sm-12.col-md-10.col-md-offset-1
 					.panel.panel-main
 						.panel-heading
@@ -103,4 +103,5 @@ html
 												.text-center
 													button.btn(type="submit") send
 		script(src='js/flip-text.js')
+		script(src='js/accordion.js')
 		script(src='js/size-contact-form.js')

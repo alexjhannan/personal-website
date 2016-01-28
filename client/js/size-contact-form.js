@@ -9,8 +9,11 @@
 		});
 	}
 
-	$(document).ready(sizeContactForm);
-
+	// two conditions require resizing: 
+	// 1) when the contact form is clicked, size to current window
+	// 2) when the window is resized, size to current window
 	$(window).resize(sizeContactForm);
+
+	$('#contact-accordion').click(sizeContactForm);
 
 }());

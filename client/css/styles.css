@@ -19,7 +19,10 @@ a {
   background-color: #f0f0f0; }
   .panel-main .panel-heading {
     background-color: #333 !important;
-    color: #f0f0f0 !important; }
+    color: #f0f0f0 !important;
+    padding-left: 40px;
+    padding-bottom: 20px;
+    cursor: pointer; }
   .panel-main .panel-body {
     margin-left: 5px;
     margin-right: -1px; }
@@ -53,5 +56,11 @@ a {
   border: 1px black solid;
   margin: 20px 0;
   width: 75px; }
+
+.panel-body {
+  display: none; }
+
+.accordion:first-of-type .panel-body {
+  display: block; }
 
 /*# sourceMappingURL=styles.css.map */
