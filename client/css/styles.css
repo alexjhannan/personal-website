@@ -63,4 +63,14 @@ a {
 .accordion:first-of-type .panel-body {
   display: block; }
 
+.empty {
+  margin-top: 10px; }
+
+.subheader {
+  border-bottom: solid 1px #333;
+  border-top: solid 1px #333;
+  padding-bottom: 1px;
+  font-family: Inconsolata;
+  font-size: 16px; }
+
 /*# sourceMappingURL=styles.css.map */
