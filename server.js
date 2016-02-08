@@ -9,7 +9,7 @@ var nodemailer = require('nodemailer');
 app.use(express.static('client'));
 
 // configure smtp for contact form
-var smtpTransport = nodemailer.createTransport("smtps://hannanEmailer%40gmail.com:gnu5thbred@smtp.gmail.com");
+var smtpTransport = nodemailer.createTransport(process.env.LOGIN);
 
 
 // for rendering jade files located in client/views
