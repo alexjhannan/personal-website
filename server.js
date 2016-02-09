@@ -11,8 +11,8 @@ app.use(express.static('client'));
 
 
 
-// for rendering jade files located in client/views
-app.set('views', __dirname + '/client/views/')
+// for rendering jade files located in server/views
+app.set('views', __dirname + '/server/views/')
 app.engine('html', engines.jade)
 app.set('view engine', 'jade');
 
