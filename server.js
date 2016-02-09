@@ -7,10 +7,6 @@ var routes = require('./server/routes/index');
 // for serving static files in the 'client' directory (css, main page)
 app.use(express.static('client'));
 
-// configure smtp for contact form
-
-
-
 // for rendering jade files located in server/views
 app.set('views', __dirname + '/server/views/')
 app.engine('html', engines.jade)
