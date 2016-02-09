@@ -2,7 +2,7 @@
 (function(){
 
 	function sizeContactForm() {
-		var width = $('#contact-form').width() * .8;
+		var width = $('#contact-form').width() * .9 - 75;
 
 		$('#contact-form .form-control').each( function(){
 			$(this).width(width);
