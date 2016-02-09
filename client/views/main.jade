@@ -1,114 +1,101 @@
-doctype html
-html
-	head
-		title Hannan Development
-		link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css')
-		link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css')
-		link(rel='stylesheet', href='../css/styles.css')
-		script(src='https://code.jquery.com/jquery-2.2.0.min.js')
-		script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js')
-	body
-		.container
-			h1
-				| Alex Hannan 
-				small web development
-			hr.brand-hr
-			br
-			.row.accordion
-				.col-sm-12.col-md-10.col-md-offset-1
-					.panel.panel-main
-						.panel-heading
-							h3
-								| Projects
-						.panel-body
+extends layout
+
+block content			
+	.row.accordion
+		.col-sm-12.col-md-10.col-md-offset-1
+			.panel.panel-main
+				.panel-heading
+					h3
+						| Projects
+				.panel-body
+					.row
+						.col-xs-12.col-sm-4
+							ul.flip-text
+								li.subheader Deployed on Heroku
+								li
+									a(href='https://goalie-app.herokuapp.com/', target='_blank') Goalie
+								li
+									a(href='https://salty-garden-95573.herokuapp.com/', target='_blank') Clone of Simon Says
+								li
+									a(href='http://www.alcoholismhurtskids.com', target='_blank') Alcoholism Hurts Kids
+								li.empty
+								li.subheader Deployed on CodePen
+								li
+									a(href='http://codepen.io/dasbuuten/pen/yYzzgw', target='_blank') Tic-Tac-Toe
+								li
+									a(href='http://codepen.io/dasbuuten/pen/rOwzOo', target='_blank') Wikipedia Search
+								li
+									a(href='http://codepen.io/dasbuuten/pen/xwrxZJ', target='_blank') JS Calculator
+								li
+									a(href='http://codepen.io/dasbuuten/pen/jbBLbX', target='_blank') FCC Camper News
+								li
+									a(href='http://codepen.io/dasbuuten/pen/YyZXMK', target='_blank') FCC Twitch Tracker
+								li
+									a(href='http://codepen.io/dasbuuten/pen/KddPMP', target='_blank') Local Weather
+								li
+									a(href='http://codepen.io/dasbuuten/pen/Xmmyba', target='_blank') Pomodoro Clock
+								li
+									a(href='http://codepen.io/dasbuuten/pen/adLora', target='_blank') Kaleidoscope QuoteGen
+								li
+									a(href='http://codepen.io/dasbuuten/pen/rxzgQJ', target='_blank') Password Generator
+						.col-xs-12.col-sm-7.col-sm-offset-1.bordered-well.text-justiy
+							p
+								| Hi! My name is Alex Hannan, and I'm a self-taught JavaScript developer. This site is a small catalog of my project work. I'm always up for a chat, so write me a message in the contact form below if you'd like to reach out.
+							p
+								| All CodePen projects have the source code available on the side, so feel free to poke around. Meanwhile, my GitHub profile (below) has code for a couple of the Heroku projects, which use a broader mix of technologies.
+	.row.accordion
+		.col-sm-12.col-md-10.col-md-offset-1
+			.panel.panel-main
+				.panel-heading
+					h3
+						| Profiles
+				.panel-body
+					.row
+						.col-xs-12.col-sm-3.col-sm-offset-1
+							ul.flip-text
+								li
+									a(href='https://github.com/alexjhannan') GitHub
+								li
+									a(href='http://freecodecamp.com/dasbuuten') FreeCodeCamp
+								li
+									a(href='https://www.codeeval.com/profile/dasbuuten/') CodeEval
+								li
+									a(href='http://www.codewars.com/users/dasbuuten') CodeWars
+								li
+									a(href='http://jsfiddle.net/user/dasbuuten/fiddles/') jsFiddle
+						.col-xs-12.col-sm-7.col-sm-offset-1.bordered-well.text-justify
+							p
+								| Profiles on other sites for easy navigation, should you like to see more of my code.
+	.row.accordion#contact-accordion
+		.col-sm-12.col-md-10.col-md-offset-1
+			.panel.panel-main
+				.panel-heading
+					h3
+						| Contact
+				.panel-body
+					.row
+						.col-xs-11.col-xs-offset-1.bordered-well.text-justify
 							.row
-								.col-xs-12.col-sm-4
-									ul.flip-text
-										li.subheader Deployed on Heroku
-										li
-											a(href='https://goalie-app.herokuapp.com/', target='_blank') Goalie
-										li
-											a(href='https://salty-garden-95573.herokuapp.com/', target='_blank') Clone of Simon Says
-										li
-											a(href='http://www.alcoholismhurtskids.com', target='_blank') Alcoholism Hurts Kids
-										li.empty
-										li.subheader Deployed on CodePen
-										li
-											a(href='http://codepen.io/dasbuuten/pen/yYzzgw', target='_blank') Tic-Tac-Toe
-										li
-											a(href='http://codepen.io/dasbuuten/pen/rOwzOo', target='_blank') Wikipedia Search
-										li
-											a(href='http://codepen.io/dasbuuten/pen/xwrxZJ', target='_blank') JS Calculator
-										li
-											a(href='http://codepen.io/dasbuuten/pen/jbBLbX', target='_blank') FCC Camper News
-										li
-											a(href='http://codepen.io/dasbuuten/pen/YyZXMK', target='_blank') FCC Twitch Tracker
-										li
-											a(href='http://codepen.io/dasbuuten/pen/KddPMP', target='_blank') Local Weather
-										li
-											a(href='http://codepen.io/dasbuuten/pen/Xmmyba', target='_blank') Pomodoro Clock
-										li
-											a(href='http://codepen.io/dasbuuten/pen/adLora', target='_blank') Kaleidoscope QuoteGen
-										li
-											a(href='http://codepen.io/dasbuuten/pen/rxzgQJ', target='_blank') Password Generator
-								.col-xs-12.col-sm-7.col-sm-offset-1.bordered-well.text-justiy
-									p
-										| Hi! My name is Alex Hannan, and I'm a self-taught JavaScript developer. This site is a small catalog of my project work. I'm always up for a chat, so write me a message in the contact form below if you'd like to reach out.
-									p
-										| All CodePen projects have the source code available on the side, so feel free to poke around. Meanwhile, my GitHub profile (below) has code for a couple of the Heroku projects, which use a broader mix of technologies.
-			.row.accordion
-				.col-sm-12.col-md-10.col-md-offset-1
-					.panel.panel-main
-						.panel-heading
-							h3
-								| Profiles
-						.panel-body
-							.row
-								.col-xs-12.col-sm-3.col-sm-offset-1
-									ul.flip-text
-										li
-											a(href='https://github.com/alexjhannan') GitHub
-										li
-											a(href='http://freecodecamp.com/dasbuuten') FreeCodeCamp
-										li
-											a(href='https://www.codeeval.com/profile/dasbuuten/') CodeEval
-										li
-											a(href='http://www.codewars.com/users/dasbuuten') CodeWars
-										li
-											a(href='http://jsfiddle.net/user/dasbuuten/fiddles/') jsFiddle
-								.col-xs-12.col-sm-7.col-sm-offset-1.bordered-well.text-justify
-									p
-										| Profiles on other sites for easy navigation, should you like to see more of my code.
-			.row.accordion#contact-accordion
-				.col-sm-12.col-md-10.col-md-offset-1
-					.panel.panel-main
-						.panel-heading
-							h3
-								| Contact
-						.panel-body
-							.row
-								.col-xs-11.col-xs-offset-1.bordered-well.text-justify
-									.row
-										.col-xs-12.col-sm-10.col-sm-offset-1
-											form#contact-form(action='/contactform', method='post')
-												.input-group
-													span.input-group-addon
-														| topic
-													input.form-control(type='text', name='subject', minlength='2', required)
-												.input-group
-													span.input-group-addon
-														| message
-													textarea.form-control(name='message', minlength='2', required)
-												.input-group
-													span.input-group-addon
-														| name
-													input.form-control(type='text', name='author', minlength='2', required)
-												.input-group
-													span.input-group-addon
-														| email
-													input.form-control(type='email', name='subject', minlength='2', required)
-												.text-center
-													button.btn(type="submit") send
-		script(src='js/flip-text.js')
-		script(src='js/accordion.js')
-		script(src='js/size-contact-form.js')
+								.col-xs-12.col-sm-10.col-sm-offset-1
+									form#contact-form(action='/contactform', method='post')
+										.input-group
+											span.input-group-addon
+												| topic
+											input.form-control(type='text', name='subject', minlength='2', required)
+										.input-group
+											span.input-group-addon
+												| message
+											textarea.form-control(name='message', minlength='2', required)
+										.input-group
+											span.input-group-addon
+												| name
+											input.form-control(type='text', name='author', minlength='2', required)
+										.input-group
+											span.input-group-addon
+												| email
+											input.form-control(type='email', name='subject', minlength='2', required)
+										.text-center
+											button.btn(type="submit") send
+	script(src='js/flip-text.js')
+	script(src='js/accordion.js')
+	script(src='js/size-contact-form.js')
