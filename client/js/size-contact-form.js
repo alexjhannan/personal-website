@@ -2,18 +2,16 @@
 (function(){
 
 	function sizeContactForm() {
-		var width = $('#contact-form').width() * .9 - 75;
+		var width = $('#contact-form').width() - 100;
 
 		$('#contact-form .form-control').each( function(){
 			$(this).width(width);
 		});
 	}
 
-	// two conditions require resizing: 
-	// 1) when the contact form is clicked, size to current window
-	// 2) when the window is resized, size to current window
+	// resize contact form on page load or window resize
 	$(window).resize(sizeContactForm);
 
-	$('#contact-accordion').click(sizeContactForm);
+	$(document).ready(sizeContactForm);
 
 }());
