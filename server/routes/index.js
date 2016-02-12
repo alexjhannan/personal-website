@@ -6,6 +6,8 @@ var mainCtrl = require('../controllers/main');
 
 router.get('/', mainCtrl.index);
 
+router.get('/resume', mainCtrl.resume);
+
 router.post('/contactform', bodyParser.urlencoded({ extended: true }), mainCtrl.contact);
 
 module.exports = router;

@@ -14,6 +14,19 @@ a {
   a:focus {
     text-decoration: none; }
 
+.big-button {
+  width: 100%;
+  margin-top: -20px;
+  margin-bottom: 20px; }
+  .big-button .btn {
+    background-color: #00A3D7; }
+    .big-button .btn:active {
+      transform: translateY(2px); }
+    .big-button .btn:hover {
+      color: #333; }
+  .big-button a {
+    color: #f0f0f0 !important; }
+
 .panel-main {
   box-shadow: none;
   background-color: #f0f0f0; }
@@ -55,5 +68,13 @@ a {
   border: 1px black solid;
   margin: 20px 0;
   width: 75px; }
+
+#resume {
+  border-color: #00A3D7;
+  margin-bottom: -5px; }
+
+.resumebox {
+  border: 3px solid #00A3D7;
+  padding: 0; }
 
 /*# sourceMappingURL=styles.css.map */

@@ -28,5 +28,10 @@ function contactCtrl(req, res){
 	res.redirect('/');
 }
 
+function resumeCtrl(req, res){
+	res.render('resume');
+}
+
 module.exports.index = indexCtrl;
 module.exports.contact = contactCtrl;
+module.exports.resume = resumeCtrl;
